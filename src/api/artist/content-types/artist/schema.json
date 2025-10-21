@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "singularName": "artist",
+    "pluralName": "artists",
+    "displayName": "artist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "instagram": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profilePic": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "guest": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "inAusbildung": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
